@@ -1,0 +1,30 @@
+{
+  "name": "prime",
+  "version": "1.0.0",
+  "description": "Finds any prime numbers up to given limit. Based on Sieve of Eratosthenes algo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crypti/prime.git"
+  },
+  "keywords": [
+    "prime",
+    "number",
+    "Sieve",
+    "of",
+    "Eratosthenes",
+    "math"
+  ],
+  "author": "Boris Povod <boris@crypti.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crypti/prime/issues"
+  },
+  "homepage": "https://github.com/crypti/prime",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
