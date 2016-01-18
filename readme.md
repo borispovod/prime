@@ -6,7 +6,7 @@ Finds any prime numbers up to given limit. Based on Sieve of Eratosthenes algo.
 ## Simple to use
 
 ```
-npm install prime
+npm install get-primes
 ```
 
 ```js
