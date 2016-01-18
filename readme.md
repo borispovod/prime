@@ -10,6 +10,7 @@ npm install prime
 
 ```js
 var prime = require('prime');
+
 var primeNumbers = prime(10);
 console.log(primeNumbers);
 ```
@@ -17,4 +18,3 @@ console.log(primeNumbers);
 ## Benchmarks
 
 TODO
-
