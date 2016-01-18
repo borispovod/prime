@@ -10,7 +10,7 @@ npm install prime
 ```
 
 ```js
-var prime = require('prime');
+var prime = require('get-primes');
 
 var primeNumbers = prime(10);
 console.log(primeNumbers);

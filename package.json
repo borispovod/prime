@@ -1,5 +1,5 @@
 {
-  "name": "prime",
+  "name": "get-primes",
   "version": "1.0.0",
   "description": "Finds any prime numbers up to given limit. Based on Sieve of Eratosthenes algo.",
   "main": "index.js",
