@@ -3,32 +3,25 @@ function prime(n) {
 	 return [];
   }
 
-  var arr = [];
-  var start = 2;
+  var lp = [],
+	  pr = [];
 
-  for (var i = 2; i <= n; i++) {
-	 arr[i] = i;
+  for (var i = 2; i < n; i++) {
+	 lp[i] = 0;
   }
 
-  function recursive() {
-	 arr.forEach(function (it, i) {
-		if (i > 2) {
-		  if (it != start && it % start == 0) {
-			 arr.splice(i, 1);
-		  }
-		}
-	 });
+  for (var i = 2; i < n; i++) {
+	 if (lp[i] == 0) {
+		lp[i] = i;
+		pr.push(i);
+	 }
 
-	 start++;
-
-	 if (start < arr.length) {
-		recursive();
+	 for (var j = 0; pr[j] <= lp[i] && (i*pr[j]) <= n; j++) {
+		lp[i*pr[j]] = pr[j];
 	 }
   }
 
-  recursive();
-
-  return arr.splice(2);
+  return pr;
 }
 
 module.exports = prime;

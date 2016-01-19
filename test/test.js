@@ -20,9 +20,8 @@ describe('Prime', function() {
 	 it("should get correct data for all prime numbers", function () {
 		primes.forEach(function (it, i) {
 		  var data = prime(it);
-		  result.push(it);
-
 		  assert.deepEqual(data, result);
+		  result.push(it);
 		});
 	 });
   });
